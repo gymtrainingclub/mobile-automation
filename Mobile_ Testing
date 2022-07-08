@@ -1,0 +1,255 @@
+MOBILE		
+Scenario : Admin		
+TC 1	Login with valid data	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Memasukkan email yang benar	Menampilkan inputan user
+2	Memasukkan password yang benar	Menampilkan inputan user
+3	Klik Login	Berhasil melakukan login data
+		
+TC 2	Login with invalid email data	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	Expected Result
+1	Memasukkan email yang salah	Menampilkan inputan user
+2	Memasukkan password yang benar	Menampilkan inputan user
+3	Klik Login	Tidak berhasil melakukan login dan muncul pesan "email or password is invalid "
+		
+TC 3	Login with invalid password data	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	Expected Result
+1	Memasukkan email yang benar	Menampilkan inputan user
+2	Memasukkan password yang salah	Menampilkan inputan user
+3	Klik Login	Tidak berhasil melakukan login dan muncul pesan "email or password is invalid "
+		
+TC 4	Login with non-existed account	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	Expected Result
+1	Memasukkan email yang tidak terdaftar	Menampilkan inputan user
+2	Memasukkan password yang tidak terdaftar	Menampilkan inputan user
+3	Klik Login	Tidak berhasil melakukan login dan muncul pesan "record not found  "
+		
+Scenario : Register		
+TC 5	Register data with correct data	
+Categories	Positive	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap	Menampilkan inputan user
+2	Memasukkan email yang benar	Menampilkan inputan user
+3	Memasukkan password yang diinginkan	Menampilkan inputan user
+4	Klik Register	Berhasil melakukan register
+		
+TC 6	Register data with existing data	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap yang sudah ada	Menampilkan inputan user
+2	Memasukkan email yang sudah ada	Menampilkan inputan user
+3	Memasukkan password yang sudah ada	Menampilkan inputan user
+4	Klik Register	Gagal melakukan register 
+		
+TC 7	Register data with empty name	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Mengosongkan field nama	Field nama kosong
+2	Memasukkan email yang diinginkan	Menampilkan inputan user
+3	Memasukkan password yang diinginkan	Menampilkan inputan user
+4	Klik Register	Gagal melakukan register dan muncul pesan "fullname is required"
+		
+TC 8	Register data with empty email	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap yang diinginkan	Menampilkan inputan user
+2	Mengosongkan field email	Field email kosong
+3	Memasukkan password yang diinginkan	Menampilkan inputan user
+4	Klik Register	Gagal melakukan register dan muncul pesan "email is required"
+		
+TC 9	Register data with empty password	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap yang diinginkan	Menampilkan inputan user
+2	Memasukkan email yang diinginkan	Menampilkan inputan user
+3	Mengosongkan field password	Field password kosong
+4	Klik Register	Gagal melakukan register dan muncul pesan "password is required"
+		
+Scenario : Membership category		
+TC 10	Search Categories that product exist	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada text field pencarian	Menampilkan kursor penginputan
+2	Memasukkan kategori yang diinginkan	Menampilkan inputan user
+3	Tekan Enter	Menampilkan product yang ada pada kategori tersebut
+		
+TC 11	Search Categories that product doesn’t exist	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada text field pencarian	Menampilkan kursor penginputan
+2	Memasukkan kategori yang diinginkan	Menampilkan inputan user
+3	Tekan Enter	Product tidak ditampilkan dan muncul pesan error "Products is empty! "
+		
+Scenario : Instructor Detail		
+TC 12	View Detail of a Instructor	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada tombol detail product yang diinginkan	Menampilkan detail product
+		
+Scenario : Class Buying		
+TC 13	Buying a Product Class	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada tombol buy pada product yang diinginkan	Berhasil memasukan product ke keranjang
+2	Klik tombol cart	Menampilkan halaman cart
+3	Klik Bayar	Berhasil melakukan pembayaran dan data pembelian masuk ke menu transaction
+		
+Scenario : Transaction		
+TC 14	Viewing a Transaction	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan klik pada profile	Menampilkan pilihan menu pada profile
+2	Klik Transaction	Berhasil melakukan menampilkan transaksi yang pernah dibuat
+		
+Scenario : Sorting		
+TC 15	Melakukan sorting pada product	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan klik pada profile	Menampilkan pilihan menu pada profile
+2	Klik Transaction	Berhasil melakukan menampilkan transaksi yang pernah dibuat
+3	Melakukan klik pada product	Product berhasil berubah urutannya ascending to descending
+		
+Email : abcd		
+Password : abcd		
+		
+MOBILE		
+Scenario : User		
+TC 1	Login with valid data	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Memasukkan email yang benar	Menampilkan inputan user
+2	Memasukkan password yang benar	Menampilkan inputan user
+3	Klik Login	Berhasil melakukan login data
+		
+TC 2	Login with invalid email data	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	Expected Result
+1	Memasukkan email yang salah	Menampilkan inputan user
+2	Memasukkan password yang benar	Menampilkan inputan user
+3	Klik Login	Tidak berhasil melakukan login dan muncul pesan "email or password is invalid "
+		
+TC 3	Login with invalid password data	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	Expected Result
+1	Memasukkan email yang benar	Menampilkan inputan user
+2	Memasukkan password yang salah	Menampilkan inputan user
+3	Klik Login	Tidak berhasil melakukan login dan muncul pesan "email or password is invalid "
+		
+TC 4	Login with non-existed account	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	Expected Result
+1	Memasukkan email yang tidak terdaftar	Menampilkan inputan user
+2	Memasukkan password yang tidak terdaftar	Menampilkan inputan user
+3	Klik Login	Tidak berhasil melakukan login dan muncul pesan "record not found  "
+		
+Scenario : Register		
+TC 5	Register data with correct data	
+Categories	Positive	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap	Menampilkan inputan user
+2	Memasukkan email yang benar	Menampilkan inputan user
+3	Memasukkan password yang diinginkan	Menampilkan inputan user
+4	Klik Register	Berhasil melakukan register
+		
+TC 6	Register data with existing data	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap yang sudah ada	Menampilkan inputan user
+2	Memasukkan email yang sudah ada	Menampilkan inputan user
+3	Memasukkan password yang sudah ada	Menampilkan inputan user
+4	Klik Register	Gagal melakukan register 
+		
+TC 7	Register data with empty name	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Mengosongkan field nama	Field nama kosong
+2	Memasukkan email yang diinginkan	Menampilkan inputan user
+3	Memasukkan password yang diinginkan	Menampilkan inputan user
+4	Klik Register	Gagal melakukan register dan muncul pesan "fullname is required"
+		
+TC 8	Register data with empty email	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap yang diinginkan	Menampilkan inputan user
+2	Mengosongkan field email	Field email kosong
+3	Memasukkan password yang diinginkan	Menampilkan inputan user
+4	Klik Register	Gagal melakukan register dan muncul pesan "email is required"
+		
+TC 9	Register data with empty password	
+Categories	Negative	
+No	Test Step	Expected Result
+1	Memasukkan nama lengkap yang diinginkan	Menampilkan inputan user
+2	Memasukkan email yang diinginkan	Menampilkan inputan user
+3	Mengosongkan field password	Field password kosong
+4	Klik Register	Gagal melakukan register dan muncul pesan "password is required"
+		
+Scenario : Membership category		
+TC 10	Search Categories that product exist	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada text field pencarian	Menampilkan kursor penginputan
+2	Memasukkan kategori yang diinginkan	Menampilkan inputan user
+3	Tekan Enter	Menampilkan product yang ada pada kategori tersebut
+		
+TC 11	Search Categories that product doesn’t exist	
+Categories	Negative	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada text field pencarian	Menampilkan kursor penginputan
+2	Memasukkan kategori yang diinginkan	Menampilkan inputan user
+3	Tekan Enter	Product tidak ditampilkan dan muncul pesan error "Products is empty! "
+		
+Scenario : Instructor Detail		
+TC 12	View Detail of a Instructor	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada tombol detail product yang diinginkan	Menampilkan detail product
+		
+Scenario : Class Buying		
+TC 13	Buying a Product Class	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan click pada tombol buy pada product yang diinginkan	Berhasil memasukan product ke keranjang
+2	Klik tombol cart	Menampilkan halaman cart
+3	Klik Bayar	Berhasil melakukan pembayaran dan data pembelian masuk ke menu transaction
+		
+Scenario : Transaction		
+TC 14	Viewing a Transaction	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan klik pada profile	Menampilkan pilihan menu pada profile
+2	Klik Transaction	Berhasil melakukan menampilkan transaksi yang pernah dibuat
+		
+Scenario : Sorting		
+TC 15	Melakukan sorting pada product	
+Categories	Positive	
+Precondition :	Akses apk mobile	
+No	Test Step	
+1	Melakukan klik pada profile	Menampilkan pilihan menu pada profile
+2	Klik Transaction	Berhasil melakukan menampilkan transaksi yang pernah dibuat
+3	Melakukan klik pada product	Product berhasil berubah urutannya ascending to descending
+		
+Email : abcd		
+Password : abcd		
